@@ -1,0 +1,138 @@
+%!TEX program = xelatex
+
+\documentclass[14pt]{article}
+% Chinese
+\usepackage[UTF8]{ctex}
+% mathematical equations
+\usepackage{amsmath}
+\usepackage{amssymb}
+% graphics
+\usepackage{graphicx}
+% geometry
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+% tables
+\usepackage{booktabs}
+
+% running title and page numbering
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% clear existing format
+\fancyhf{}
+\fancyhead[C]{哈尔滨工业大学课程设计论文}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% font, font size and spacing
+\usepackage{fontspec}
+\usepackage{setspace}
+\setmainfont{Times New Roman}
+\setsansfont{Times New Roman}
+\setmonofont{Times New Roman}
+\setCJKmainfont{SimSun}
+\renewcommand\normalsize{
+    \fontsize{12pt}{17.5pt}
+    \selectfont
+}
+\setstretch{1.25}
+
+% title format
+\usepackage{titlesec}
+% 小二-18 三号-16 小三-15 四号-14 小四（正文）-12 五号-10.5
+\titleformat{\section}
+    {\centering\heiti\zihao{-2}}
+    {第\chinese{section}章}
+    {0.1cm}
+    {}
+\titleformat{\subsection}
+    {\heiti\zihao{-3}}
+    {\arabic{section}.\arabic{subsection}}
+    {0.1cm}
+    {}
+\titleformat{\subsubsection}
+    {\heiti\zihao{4}}
+    {\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+    {0.1cm}
+    {}
+\titleformat{\subsubsubsection}
+    {\heiti\zihao{-4}}
+    {\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{subsubsubsection}}
+    {0.1cm}
+    {}
+
+\begin{document}
+% title page
+\pagenumbering{gobble}
+\begin{titlepage}
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{hitsz.png}\\
+        \vspace{8cm}
+        {\heiti\zihao{-2}文章标题}\\
+        \vspace{1.5cm}
+        {\heiti\zihao{-2}作者姓名}\\
+        \vspace{6cm}
+        {\zihao{-2}哈尔滨工业大学}\\
+        \zihao{-2}2024年11月
+    \end{center}
+\end{titlepage}
+
+% table of contents
+\newpage
+\pagenumbering{Roman}
+\tableofcontents
+
+% Chinese abstract
+\newpage
+\section*{摘要}
+\par
+本文主要研究内容如下。\\
+\noindent {\heiti 关键词：}关键词
+
+% English abstract
+\newpage
+\section*{Abstract}
+\par
+This is the abstract.\\
+\noindent \textbf{Keywords：}keyword
+
+% Chapter 1
+\newpage
+\pagenumbering{arabic}
+\section{绪论}
+\subsection{课题背景及研究的目的和意义}
+\subsubsection{课题背景}
+本文主要研究内容如图1-1所示。
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{hitsz.png}\\
+    \zihao{5} 图1-1 系统结构
+\end{center}
+\par
+多头注意力机制的输出如式（1-1）所示。
+\begin{align}
+    Attention=Softmax(\frac{QK^T}{\sqrt{d_k}})V \tag{1-1}
+\end{align}
+式中，$Q,K,V \text{ —— 队列，键，值向量}$；
+\par
+\hspace{0.2cm} $d_k \text{ —— 值向量维度}$
+\par
+本文取得的准确率如表1-1所示。
+\begin{center}
+    \zihao{5} 表1-1 测试准确率\\
+    \begin{tabular}{ccc}
+        \toprule
+        模型 & 训练准确率 & kappa\\
+        \midrule
+        CSP & 80\% & 0.6\\
+        EEGConformer & 90\% & 0.7\\
+        \bottomrule
+    \end{tabular}
+\end{center}
+\subsubsection{研究的目的和意义}
+最经典的脑电分类算法是Koles在1991年提出的共空间模式算法（Common Spatial Pattern, CSP）。$^{[1]}$
+
+\newpage
+\section*{参考文献}
+\addcontentsline{toc}{section}{参考文献}
+
+\end{document}
