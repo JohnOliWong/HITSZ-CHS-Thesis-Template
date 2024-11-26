@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/d41fc57d-b5af-4d45-8461-2bc23e28a851)
 
-This is a Chinese LaTeX template made for course papers in HITSZ(哈工大深圳), it features:
+This is a ready-to-use, simple Chinese LaTeX template made for course papers in HITSZ(哈工大深圳), it features:
  - Chinese compatibility
  - Chinese and English characters are in Songti and Times New Roman respectively by default
  - page numbering in Roman numbers for the table of contents, Chinese and English abstracts
