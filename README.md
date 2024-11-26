@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/d41fc57d-b5af-4d45-8461-2bc23e28a851)
-
+(Scroll down for preview)
 This is a ready-to-use, simple Chinese LaTeX template made for course papers in HITSZ(哈工大深圳), it features:
  - Chinese compatibility
  - Chinese and English characters are in Songti and Times New Roman respectively by default
@@ -15,3 +14,5 @@ To get this file up and running on your desktop, you should:
  - use the hotkey <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> to compile the file, the PDF output will be saved in the same directory
 
 Note that the second to last step is used to switch the compiler from the default one to XeLaTeX, which supports custom font faces
+
+![image](https://github.com/user-attachments/assets/d41fc57d-b5af-4d45-8461-2bc23e28a851)
