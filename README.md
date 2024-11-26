@@ -1,4 +1,5 @@
 (Scroll down for preview)
+
 This is a ready-to-use, simple Chinese LaTeX template made for course papers in HITSZ(哈工大深圳), it features:
  - Chinese compatibility
  - Chinese and English characters are in Songti and Times New Roman respectively by default
