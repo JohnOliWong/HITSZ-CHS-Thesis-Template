@@ -14,7 +14,7 @@ Alternatively, to get this file up and running on your desktop, you should:
  - Install <a href="https://miktex.org/howto/install-miktex">MiKTeX</a> (it provides on-the-fly package installation and management, just like the LaTeX version of Anaconda)
  - Install <a href="https://strawberryperl.com/">Strawberry Perl</a> (this is the dependency for some LaTeX packages)
  - In VS Code, click the gear icon in the lower left corner, choose _settings_, search for _Force Recipe Usage_ in the search bar, uncheck the box
- - use the hotkey <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> to compile the file, the PDF output will be saved in the same directory
+ - Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> to compile the file, the PDF output will be saved in the same directory
 
 Note that the second to last step is used to switch the compiler from the default one to _**XeLaTeX**_, which supports custom font faces
 
